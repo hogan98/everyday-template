@@ -3,8 +3,8 @@
 @section('title')
 
 @section('content')
-<h1>Template</h1>
 <main class="flow content-grid">
+    <h1>Template</h1>
 
     <h1 class='site-title'>No more containers!</h1>
     <p>It can be useful to have a system in place that's easy to go full-width, or have a "breakout" section for calls

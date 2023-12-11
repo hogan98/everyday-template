@@ -24,9 +24,11 @@ dd {
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role="list"],
-ol[role="list"] {
+nav ul,
+nav li,
+nav a {
     list-style: none;
+    text-decoration: none;
 }
 
 /* Set core root defaults */
@@ -82,14 +84,6 @@ select {
 //setting up the Grid-Container
 .content-grid, //The full-width is added to classes below so if you want a bg full-width and text in the content-start-end dont have to add multible clases
 .full-width {
-    --padding-inline: 1rem;
-    --content-max-width: 900px;
-    --breakout-max-width: 1200px;
-
-    --breakout-size: calc(
-        (var(--breakout-max-width) - var(--content-max-width)) / 2
-    );
-
     display: grid;
     grid-template-columns:
         [full-width-start] minmax(var(--padding-inline), 1fr)
